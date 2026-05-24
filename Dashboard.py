@@ -3,10 +3,7 @@ import pandas as pd
 import numpy as np
 
 
-#st.title("👗 Women's Clothing Reviews Dashboard 💅")
-
-
-st.markdown('<div style="font-size:34px; font-weight:700; color:#1a1a1a;">👗 Women\'s Clothing Reviews Dashboard 💅</div>', unsafe_allow_html=True)
+st.title("👗 Women's Clothing Reviews Dashboard 💅")
 st.markdown("---")
 
 
