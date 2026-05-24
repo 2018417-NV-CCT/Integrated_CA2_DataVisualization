@@ -77,30 +77,3 @@ st.subheader("👗 Step 4 — Clothing Categories")
 cat_counts = data["class name"].value_counts()
 st.bar_chart(cat_counts)
 
-
-
-#5-DIVISION BREAKDOWN
-
-st.subheader("🏬 Step 5 — Store Divisions")
-div_counts = data["division name"].value_counts()
-st.bar_chart(div_counts)
-
-
-#6-Ratings by Category
-
-st.subheader("📦 Rating Spread Across Clothing Categories")
-
-st.write("This chart shows how ratings are distributed in each clothing category.")
-
-# Remove unknown categories
-cat_rating = fdf[fdf["class name"] != "Unknown"]
-
-# Simple box plot
-fig_box = px.box(
-    cat_rating,
-    x="class name",
-    y="rating",
-    title="Ratings by Clothing Category"
-)
-
-st.plotly_chart(fig_box, use_container_width=True)
