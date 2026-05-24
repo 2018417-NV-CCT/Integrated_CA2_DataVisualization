@@ -111,7 +111,24 @@ st.markdown("---")
 
 #3-AGE DISTRIBUTION
 
-st.header("👥 Customers Age")
+#st.header("👥 Customers Age")
+
+
+st.markdown(
+    """
+    <div style="
+        background-color:#b6d7a8;
+        padding:15px;
+        border-radius:8px;
+        font-weight:700;
+        font-size:26px;
+        color:#1a1a1a;
+    ">
+        👥 Customers Age
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 age_counts = data["age"].value_counts().sort_index()
 st.bar_chart(age_counts)
 
@@ -119,7 +136,24 @@ st.markdown("---")
 
 #4-CLOTHING CATEGORIES
 
-st.header("👗 Clothing Categories 🧤")
+#st.header("👗 Clothing Categories 🧤")
+
+
+st.markdown(
+    """
+    <div style="
+        background-color:#f9e79f;
+        padding:15px;
+        border-radius:8px;
+        font-weight:700;
+        font-size:26px;
+        color:#1a1a1a;
+    ">
+        👗 Clothing Categories
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 st.write("Clothing types that are most reviewed")
 cat_counts = data["class name"].value_counts()
 st.bar_chart(cat_counts)
