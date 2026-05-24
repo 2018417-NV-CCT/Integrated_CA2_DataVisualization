@@ -24,7 +24,7 @@ data_load_state = st.text('Loading data...')
 
 data = load_data(23486)
 
-data_load_state.text("Done! (using st.cache_data)")
+data_load_state.text("Loading Data Done!")
 
 #Basic info of the dataset
 st.subheader("Quick Overview")
