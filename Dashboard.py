@@ -86,7 +86,7 @@ st.markdown("---")
 
 #2-RATING DISTRIBUTION
 
-#st.header("⭐ Ratings")
+#st.header("⭐ Ratings ")
 
 
 st.markdown(
