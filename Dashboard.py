@@ -61,7 +61,7 @@ st.markdown("---")
 
 #2-RATING DISTRIBUTION
 
-st.header("⭐ Ratings 💗")
+st.header("⭐ Ratings")
 st.write("This chart shows how customers rated products")
 
 rating_counts = data["rating"].value_counts().sort_index()
@@ -71,7 +71,7 @@ st.markdown("---")
 
 #3-AGE DISTRIBUTION
 
-st.header("👥 Customers Age 🦋")
+st.header("👥 Customers Age")
 age_counts = data["age"].value_counts().sort_index()
 st.bar_chart(age_counts)
 
