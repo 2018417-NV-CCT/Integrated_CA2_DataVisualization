@@ -9,17 +9,17 @@ def load_data(nrows):
     data = pd.read_csv("data_dashboard.csv", nrows=nrows)
 
 # drop unnamed column safely
-    data = data.loc[:, ~data.columns.str.contains("^Unnamed")]
+    #data = data.loc[:, ~data.columns.str.contains("^Unnamed")]
 
     # convert column names to lowercase
-    data.columns = data.columns.str.lower()
+    #data.columns = data.columns.str.lower()
 
 
 #converting features names to lowercase
-    #lowercase = lambda x: str(x).lower()
-    #data.rename(lowercase, axis='columns', inplace=True)
-    #data = data.rename(columns={"unnamed: 0": "review id"})
-    #return data
+    lowercase = lambda x: str(x).lower()
+    data.rename(lowercase, axis='columns', inplace=True)
+    data = data.rename(columns={"unnamed: 0": "review id"})
+    return data
 
 #adding text
 data_load_state = st.text('Loading data...')
