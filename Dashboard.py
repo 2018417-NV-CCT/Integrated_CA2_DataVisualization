@@ -73,7 +73,7 @@ st.bar_chart(age_counts)
 
 #4-CLOTHING CATEGORIES
 
-st.subheader("👗 Clothing Categories")
+st.subheader("👗🧤 Clothing Categories")
 cat_counts = data["class name"].value_counts()
 st.bar_chart(cat_counts)
 
