@@ -48,7 +48,7 @@ st.markdown("---")
 
 #1-DATA OVERVIEW
 
-st.header("📊 Dataset Overview")
+st.header("📊 Dashboard Summary")
 st.write("Summary of all Customer Reviews:")
 
 col1, col2, col3 = st.columns(3)
