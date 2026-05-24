@@ -58,7 +58,7 @@ col3.metric("Average Rating", round(data["rating"].mean(), 2))
 
 #2-RATING DISTRIBUTION
 
-st.subheader("⭐💗 Ratings")
+st.subheader("⭐ Ratings 💗")
 rating_counts = data["rating"].value_counts().sort_index()
 st.bar_chart(rating_counts)
 
@@ -73,7 +73,7 @@ st.bar_chart(age_counts)
 
 #4-CLOTHING CATEGORIES
 
-st.subheader("👗🧤 Clothing Categories")
+st.subheader("👗 Clothing Categories 🧤")
 cat_counts = data["class name"].value_counts()
 st.bar_chart(cat_counts)
 
