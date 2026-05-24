@@ -44,7 +44,7 @@ if st.checkbox('Show raw data'):
 
 #1-DATA OVERVIEW
 
-st.subheader("📊 Step 1 — Dataset Overview")
+st.subheader("📊 Dataset Overview")
 
 st.write("Quick summary of the dataset:")
 
@@ -58,7 +58,7 @@ col3.metric("Average Rating", round(data["rating"].mean(), 2))
 
 #2-RATING DISTRIBUTION
 
-st.subheader("⭐ Step 2 — Ratings")
+st.subheader("⭐ Ratings")
 rating_counts = data["rating"].value_counts().sort_index()
 st.bar_chart(rating_counts)
 
@@ -66,14 +66,14 @@ st.bar_chart(rating_counts)
 
 #-3AGE DISTRIBUTION
 
-st.subheader("👥 Step 3 — Customers Age")
+st.subheader("👥 Customers Age")
 age_counts = data["age"].value_counts().sort_index()
 st.bar_chart(age_counts)
 
 
 #4-CLOTHING CATEGORIES
 
-st.subheader("👗 Step 4 — Clothing Categories")
+st.subheader("👗 Clothing Categories")
 cat_counts = data["class name"].value_counts()
 st.bar_chart(cat_counts)
 
