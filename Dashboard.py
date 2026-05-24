@@ -8,7 +8,7 @@ st.title("Women's Clothing Reviews Dashboard")
 def load_data(nrows):
     data = pd.read_csv("data_dashboard.csv", nrows=nrows)
 
-#converting features names to lowercases
+#converting features names to lowercase
     lowercase = lambda x: str(x).lower()
     data.rename(lowercase, axis='columns', inplace=True)
     data = data.rename(columns={"unnamed: 0": "review id"})
