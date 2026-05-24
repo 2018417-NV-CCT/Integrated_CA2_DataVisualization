@@ -66,7 +66,7 @@ st.bar_chart(rating_counts)
 
 #-3AGE DISTRIBUTION
 
-st.subheader("👥 Customers Age")
+st.subheader("👥 Customers Age 🦋")
 age_counts = data["age"].value_counts().sort_index()
 st.bar_chart(age_counts)
 
