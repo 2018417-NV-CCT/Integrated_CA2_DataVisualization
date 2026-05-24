@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title("Women's Clothing Reviews Dashboard")
+st.title("👗 Women's Clothing Reviews Dashboard 💅")
+st.markdown("---")
 
 #Load Data
 @st.cache_data
@@ -26,8 +27,11 @@ data = load_data(23486)
 
 data_load_state.text("Loading Data Done!")
 
+st.markdown("---")
+
+
 #Basic info of the dataset
-st.subheader("Quick Overview")
+st.header("Quick Overview")
 
 st.write("Total rows:", len(data))
 
@@ -40,13 +44,12 @@ if st.checkbox('Show raw data'):
     st.subheader('Raw data')
     st.write(data)
 
-
+st.markdown("---")
 
 #1-DATA OVERVIEW
 
-st.subheader("📊 Dataset Overview")
-
-st.write("Quick summary of the dataset:")
+st.header("📊 Dataset Overview")
+st.write("Summary of all Customer Reviews:")
 
 col1, col2, col3 = st.columns(3)
 
@@ -54,26 +57,32 @@ col1.metric("Total Reviews", len(data))
 col2.metric("Clothing Items", data["clothing id"].nunique())
 col3.metric("Average Rating", round(data["rating"].mean(), 2))
 
-
+st.markdown("---")
 
 #2-RATING DISTRIBUTION
 
-st.subheader("⭐ Ratings 💗")
+st.header("⭐ Ratings 💗")
+st.write("This chart shows how customers rated products")
+
 rating_counts = data["rating"].value_counts().sort_index()
 st.bar_chart(rating_counts)
 
+st.markdown("---")
 
+#3-AGE DISTRIBUTION
 
-#-3AGE DISTRIBUTION
-
-st.subheader("👥 Customers Age 🦋")
+st.header("👥 Customers Age 🦋")
 age_counts = data["age"].value_counts().sort_index()
 st.bar_chart(age_counts)
 
+st.markdown("---")
 
 #4-CLOTHING CATEGORIES
 
-st.subheader("👗 Clothing Categories 🧤")
+st.header("👗 Clothing Categories 🧤")
+st.write("Clothing types that are most reviewed")
 cat_counts = data["class name"].value_counts()
 st.bar_chart(cat_counts)
+
+st.markdown("---")
 
