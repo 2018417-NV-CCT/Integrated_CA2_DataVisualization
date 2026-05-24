@@ -58,7 +58,7 @@ col3.metric("Average Rating", round(data["rating"].mean(), 2))
 
 #2-RATING DISTRIBUTION
 
-st.subheader("⭐ Ratings")
+st.subheader("⭐💗 Ratings")
 rating_counts = data["rating"].value_counts().sort_index()
 st.bar_chart(rating_counts)
 
