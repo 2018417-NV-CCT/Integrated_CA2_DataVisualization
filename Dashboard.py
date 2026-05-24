@@ -4,10 +4,10 @@ import numpy as np
 
 
 
-st.markdown('<div class="main-title">👗 Women\'s Clothing Reviews Dashboard</div>', unsafe_allow_html=True)
+#st.markdown('<div class="main-title">👗 Women\'s Clothing Reviews Dashboard</div>', #unsafe_allow_html=True)
 
 
-#st.title("👗 Women's Clothing Reviews Dashboard 💅")
+st.title("👗 Women's Clothing Reviews Dashboard 💅")
 st.markdown("---")
 
 
