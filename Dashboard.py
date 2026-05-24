@@ -62,6 +62,10 @@ if st.checkbox('Show raw data'):
 st.markdown("---")
 
 #1-DATA OVERVIEW
+st.markdown(
+    '<div class="section" style="background-color:#f6c28b;">📊 Dataset Overview</div>',
+    unsafe_allow_html=True
+)
 
 st.header("📊 Dashboard Summary")
 st.write("Summary of all Customer Reviews:")
