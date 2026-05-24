@@ -3,25 +3,8 @@ import pandas as pd
 import numpy as np
 
 
-st.markdown(
-    """
-    <style>
-    .title-box {
-        background-color: #f6c28b;  /* peach */
-        padding: 20px;
-        border-radius: 12px;
-        text-align: center;
-        font-size: 40px;
-        font-weight: 700;
-        color: #1a1a1a;
-        margin-bottom: 20px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-#st.title("👗 Women's Clothing Reviews Dashboard 💅")
-#st.markdown("---")
+st.title("👗 Women's Clothing Reviews Dashboard 💅")
+st.markdown("---")
 
 
 st.markdown('<div class="main-title">👗 Women\'s Clothing Reviews Dashboard</div>', unsafe_allow_html=True)
