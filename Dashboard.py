@@ -2,6 +2,16 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+st.markdown("""
+<style>
+.section {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+</style>
+""", unsafe_allow_html=True)
 
 st.title("👗 Women's Clothing Reviews Dashboard 💅")
 st.markdown("---")
