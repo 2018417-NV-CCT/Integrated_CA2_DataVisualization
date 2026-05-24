@@ -30,7 +30,7 @@ data_load_state = st.text('Loading data...')
 
 data = load_data(23486)
 
-data_load_state.text("Loading Data Done!")
+data_load_state.text("Loading Data Done! 🟩")
 
 st.markdown("---")
 
