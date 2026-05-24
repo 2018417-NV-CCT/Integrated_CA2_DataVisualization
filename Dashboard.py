@@ -54,7 +54,13 @@ st.markdown("---")
 #1-DATA OVERVIEW
 
 
-st.header("📊 Dashboard Summary")
+#st.header("📊 Dashboard Summary")
+
+st.markdown(
+    '<div style="background-color:#f6c28b; padding:10px; border-radius:8px; font-weight:600;">📊 Dashboard Summary</div>',
+    unsafe_allow_html=True
+)
+
 st.write("Summary of all Customer Reviews:")
 
 col1, col2, col3 = st.columns(3)
