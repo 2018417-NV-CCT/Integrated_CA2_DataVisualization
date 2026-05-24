@@ -59,11 +59,11 @@ st.markdown("---")
 st.markdown(
     """
     <div style="
-        background-color:#f6c28b;
+        background-color:#f7a1c4;
         padding:15px;
         border-radius:8px;
         font-weight:700;
-        font-size:28px;
+        font-size:26px;
         color:#1a1a1a;
     ">
         📊 Dashboard Summary
@@ -71,7 +71,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
 
 st.write("Summary of all Customer Reviews:")
 
