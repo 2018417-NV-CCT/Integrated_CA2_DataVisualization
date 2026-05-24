@@ -57,9 +57,21 @@ st.markdown("---")
 #st.header("📊 Dashboard Summary")
 
 st.markdown(
-    '<div style="background-color:#f6c28b; padding:10px; border-radius:8px; font-weight:600;">📊 Dashboard Summary</div>',
+    """
+    <div style="
+        background-color:#f6c28b;
+        padding:15px;
+        border-radius:8px;
+        font-weight:700;
+        font-size:28px;
+        color:#1a1a1a;
+    ">
+        📊 Dashboard Summary
+    </div>
+    """,
     unsafe_allow_html=True
 )
+
 
 st.write("Summary of all Customer Reviews:")
 
