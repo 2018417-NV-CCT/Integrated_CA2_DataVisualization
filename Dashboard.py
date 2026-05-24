@@ -50,7 +50,7 @@ st.write("Quick summary of the dataset:")
 
 col1, col2, col3 = st.columns(3)
 
-col1.metric("Total Reviews", len(df))
+col1.metric("Total Reviews", len(data))
 col2.metric("Clothing Items", data["clothing id"].nunique())
 col3.metric("Average Rating", round(data["rating"].mean(), 2))
 
