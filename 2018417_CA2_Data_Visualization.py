@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 
 
 st.set_page_config(
-	page_title="Women's Clothing Reviews Dashboard",
-	layout="wide",
-	initial_sidebar-state="expanded",
+    page_title="Women's Clothing Reviews Dashboard",
+    layout="wide",
+    initial_sidebar_state="expanded",
 )
