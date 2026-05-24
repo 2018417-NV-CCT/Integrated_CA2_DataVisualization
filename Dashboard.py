@@ -84,7 +84,24 @@ st.markdown("---")
 
 #2-RATING DISTRIBUTION
 
-st.header("⭐ Ratings")
+#st.header("⭐ Ratings")
+
+
+st.markdown(
+    """
+    <div style="
+        background-color:#a4c2f4;
+        padding:15px;
+        border-radius:8px;
+        font-weight:700;
+        font-size:26px;
+        color:#1a1a1a;
+    ">
+        ⭐ Ratings
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 st.write("This chart shows how customers rated products")
 
 rating_counts = data["rating"].value_counts().sort_index()
